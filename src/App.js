@@ -8,7 +8,7 @@ function App() {
     <div>
       <Navbar />
       <Greeter name="John Cut" age="35" />
-      <Greeter name="Jankat" age="23" />
+      <Greeter name="Jankat" />
       <h1>HELLO FROM THE OTHER SIDE</h1>
     </div>
   );
