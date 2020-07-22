@@ -5,9 +5,12 @@ function Greeter({ name, excitement = 1, age = 99 }) {
     <>
       <h1>
         Hello There, {name}
-        {"!".repeat(excitement)}{" "}
+        {"!".repeat(excitement)}
       </h1>
       <p>You are {age} years old XD</p>
+      <button onClick={() => alert("HELLOOO!!!")}>
+        Click me{"!".repeat(excitement)}
+      </button>
     </>
   );
 }
