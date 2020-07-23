@@ -8,8 +8,8 @@ import "./App.css";
 
 const initItems = [
   { id: 1, name: "Parmesan", price: 5.45, qty: 1 },
-  { id: 2, name: "Mozzarella", price: 7.25, qty: 2 },
-  { id: 3, name: "Cheddar", price: 3.75, qty: 3 },
+  { id: 2, name: "Mozzarella", price: 7.25, qty: 1 },
+  { id: 3, name: "Cheddar", price: 3.75, qty: 1 },
 ];
 
 function App() {

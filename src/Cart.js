@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CartItem from "./CartItem";
 
 function Cart({ initItems }) {
-  const [items, setItems] = useState(initItems);
+  // gets local storage data
+  const initState = JSON.parse(window.localStorage.getItem("items"));
+  // use initState as data source unless there is no local data then use initItems
+  const [items, setItems] = useState(initState || initItems);
+  // save data to local storage when 'items' state have changed
+  useEffect(() => {
+    window.localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
   const updateQty = (id, newQty) => {
     const newItems = items.map((item) => {
       if (item.id === id) {
